@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Assignment 3 Gist Search</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='functions7.js'></script>
+  </head>
+  
+  <body>
+    <h2>Gists Search</h2>
+    <form>
+        I would like <input type='number' min='1' max='5' name='filterNumPages' value='1'></input>pages to be returned. (1-5)<br><br>
+        <b>Apply the following filters to my results:</b><br><br>
+        <input type='checkbox' name='PythonCheck'>Python</input>
+        <input type='checkbox' name='JSONCheck'>JSON</input>
+        <input type='checkbox' name='JavascriptCheck'>Javascript</input>
+        <input type='checkbox' name='SQLCheck'>SQL</input><br>
+      
+        <input type='button' onclick='getGists()' value='Search'>
+    </form>
+    <h2>Search Results:</h2>
+      <div id='gistsList'></div>
+      <h2>My Favorites List:</h2>
+      <div id='myFavorites'></div>
+  </body>
+</html>
